@@ -52,11 +52,13 @@ function draw() {
     bg = random(bgs);
     document.getElementById('title').style.fontFamily = "hackedFont";
     document.getElementById("error_intro").style.display = "block";
+    document.getElementById("notfake").style.display = "block";
   } else {
     document.getElementById('title').style.fontFamily = "Mohave-Bold";
     if (textchangeCounter > 60) {
       textchangeCounter = 0;
       document.getElementById("error_intro").style.display = "none";
+      document.getElementById("notfake").style.display = "none";
     }
 
   }

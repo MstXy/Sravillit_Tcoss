@@ -42,6 +42,16 @@ body {
   font-size: 65px;
 }
 
+#notfake {
+  font-family: Mohave-Bold;
+  position: absolute;
+  color: #08F7FE;
+  top: 20vh;
+  left: 5vw;
+  font-size: 40px;
+  display: none;
+}
+
 #intro {
   font-family: Mohave;
   position: absolute;
