@@ -9,7 +9,7 @@ let hackedFont;
 var textchangeCounter = 0;
 
 function preload() {
-  song = loadSound("Demo.wav");
+  song = loadSound("Demo.mp3");
   for (var i = 1; i < 17; i++) {
     bgs.push(loadImage('imgs/glitch-img/ts_glitched' + i + '.jpeg'));
   }
