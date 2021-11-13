@@ -21,14 +21,17 @@ A sample output from Spleeter:
 * Original Song: [Durag Activity - Baby Keem, Travis Scott](doc/spleeter/durag_activity.mp3)
 Because the result is ideal (only a small portion of it is a bit distorted), but without anything innovative, I spleeted Travis Scott's new song: [Escape Plan](https://www.youtube.com/watch?v=ve_iZT4Huuo), and use the accompaniment as the base for my later edited track.
 
-#### 2.2 SampleRNN
-SampleRNN is the first tool I tried, refering to this [blog post](https://karlhiner.com/music_generation/wavenet_and_samplernn/) by karlhiner. In the blog post, it is claimed that the result from SampleRNN is actually better than WaveNet, so I decided to try SampleRNN. Because I assume that having vocals in the training data would be impedeing the performance of SampleRNN, I choose [👾Hip Hop/Trap Instrumental Beats Mix 2021 | 1 HOUR #7](https://www.youtube.com/watch?v=1s6-_1IO3gg) on YouTube. Multiple github repositories were tried, and in total I ran about 7 to 8 tests, each for approximately 8 hours, and none of them yield any good result: half were silent and another half contain only vibrations of a single tone. By opening it and looking at the spectrograms, it turns out that the model have achieved nothing: ![samplernn_fail](doc/samplernn/samplernn_result.png). The corresponding file is [here](doc/samplernn/ep41-s2.wav).
+#### 2.2.1 SampleRNN-pytorch
+SampleRNN is the first tool I tried, refering to this [blog post](https://karlhiner.com/music_generation/wavenet_and_samplernn/) by karlhiner. In the blog post, it is claimed that the result from SampleRNN is actually better than WaveNet, so I decided to try SampleRNN. Because I assume that having vocals in the training data would be impedeing the performance of SampleRNN, I choose [👾Hip Hop/Trap Instrumental Beats Mix 2021 | 1 HOUR #7](https://www.youtube.com/watch?v=1s6-_1IO3gg) on YouTube. Multiple github repositories were tried, and in total I ran about 5 tests, each for approximately 8 hours, and none of them yield any good result: half were silent and another half contain only vibrations of a single tone. By opening it and looking at the spectrograms, it turns out that the model have achieved nothing: ![samplernn_fail](doc/samplernn/samplernn_result.png). The corresponding file is [here](doc/samplernn/ep41-s2.wav). I even tried to train on the same dataset the blog post used that generates some decent result, it is still the same vibration and noises. One possible reasons are the version of pytorch the [original repository](https://github.com/deepsound-project/samplernn-pytorch) used are way too old (PyTorch 0.1.12). I also tried to modify some code pieces to get rid of deprecation warnings but the result remains the same.
 
-#### 2.3 WaveNet
+#### 2.2.2 PRiSM-SampleRNN
+With the failure mostly depend on package versions (as I thought then), I search and found this tool: [PRiSM-SampleRNN](https://github.com/rncm-prism/prism-samplernn), which is a community version hoping to "bring samplernn back to life". However, after three attempts with different parameters such as sample-rate, sampling-temperature, nothing good is generated: it is still monotonus noises, but surely something better about it is that it finally have oscillogram, and the noise is more "consistent". ![prism_samplernn](prism_result.png). The corresponding file is [here](doc/samplernn/please_e=1_t=0.95.wav). Because the result seems to be something, but training for more time has no effect on the output quality, I suspect that it might be certain features of my training set, the 1h trap beat that is impeding the training, either too quite on certain pieces or too heavy on the drum beats. But by then I have decided to work on glitch music, so I did not make any further attempts. The above noise clip is included in the final audio created. 
 
-#### 2.4 WaveGAN
+#### 2.3 WaveNet & WaveGAN
+I also tried to use [WaveNet](https://github.com/ibab/tensorflow-wavenet) and [WaveGAN](https://github.com/chrisdonahue/wavegan), the result is similar, so they are not further explored and are not included in the final audio.
 
-#### 2.5 OpenAI Jukebox
+#### 2.4 OpenAI Jukebox
+
 
 #### 2.6 AIVA
 
