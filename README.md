@@ -59,13 +59,18 @@ The result is not consistent, therefore, I have to generate several times and ha
 
 #### 3.2 GPT-J-6B
 For artist description, I use GPT-J-6B, https://6b.eleuther.ai/. It is quite interesting how I had to manipulate the prompt to get what I want. For example, the prompt: *"Ayo! This is Sraviiiiit Tcoss, rapper and producer."* would only give me interview scripts, but *"I am Sraviiiiit Tcoss, a rising rapper and producer. "* would give a decent self-introduction. 
-More interesting (and striking), is the unwanted output from GPT-J-6B, which clearing indicates the lack of supervision of their training datasets: *"Ayo! This is Sraviiiiit Tcoss, rapper and producer. I’m so excited to be doing this interview with you because I’ve been a fan of yours for years. **You are the first rapper I remember hearing who was a young, black, queer, feminist, and trans woman who was also writing rap songs. I think you are also the first rapper to have an album called “Savage Love” that was all about sex.**..."* This kind of comments, as far as I am concerned, would only appear in those tweets that make sarcastic comments on political correctness, which should not be allowed in a training set.
+More interesting (and striking), is the unwanted output from GPT-J-6B, which clearing indicates the lack of supervision of their training datasets: *"Ayo! This is Sraviiiiit Tcoss, rapper and producer. I’m so excited to be doing this interview with you because I’ve been a fan of yours for years. You are the first rapper I remember hearing **who was a young, black, queer, feminist, and trans woman who was also writing rap songs.** I think you are also the first rapper to have **an album called “Savage Love” that was all about sex.**..."* This kind of comments, as far as I am concerned, would only appear in those tweets that make sarcastic comments on political correctness, which should not be allowed in a training set.
 Still, this was a serendipity, so I also included it in the website, which would show up when the website is 'glitched'.
 
 #### 3.3 GPT-3
 One disappointment is that I finally get the OpenAI API beta and have access to GPT-3 on 11/13, but by then I am already wrapping up my project. So it is really a shame I could not experiment with it. 
 
 ### 4. Website Design
+The visual elements on the website is built using p5.js, including the audio visualizer, and the glitched background and images are created using: [p5.glitch](https://p5.glitch.me/). The fonts of the title and the background would turn into a glitched version when the audio playing has exceeded certain amplitude. Moreover, texts such as *"NOT an A.I. created fake artist"* and *"A young, black, queer, feminist, and trans woman, also the first rapper to have an album called 'Savage Love' that was all about sex."* would appear according to the amplitude.
+The sections in the website is quite straight forward. One section for self-introduction, with the stickman figure, one section for lyrics and one section for the audio. And one bonus section called "Payday".
+* Stickman figure: this is drawn from the official website of travis scott: ![ts_page](doc/ts_page.png)
+* in the audio section's beat inspiration, I used [talktotransformers](https://app.inferkit.com/demo) and give the prompt of *"Lorem ipsum dolor sit amet"*, and see how it could continue. The idea behind this is just to make a guess on the situation when A.I. failed to generate relative information on its own generation.
+* Similarily, I notice that in the introduction, GPT-J-6B mentioned Pay Day as the debut album of our artist Sravillit Tcoss, but as I doubt it would even remember such information in further text generation, I also make a guess on A.I.'s response to that, and shows a glitched "video not found" image on clicking the "Pay Day" section.
 
 ### 5. Future Developments
 Ye Bot.
