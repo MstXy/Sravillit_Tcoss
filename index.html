@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/p5.glitch@latest/p5.glitch.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <title>Sr🅰villit Tcoss</title>
+  </head>
+  <body>
+    <p id="title">Sravillit Tcoss</p>
+    <div id="intro">
+      <p>
+        I am Sravillit Tcoss, a rising rapper and producer. I am from the South Bay and I've been writing rhymes since I was 13. I'm currently pursuing my music career as a solo artist, and I write and produce my own music. I am also a member of the 7th & Ithaca group. We've released our debut album <i>'Pay Day'</i> on September 24th, 2018. I'm originally from Compton, CA. I was born in 1983. I've been a part of a lot of groups and I've done a lot of different things, but my main focus is rap, write lyrics and produce beats. <span id="error_intro">A young, black, <span class="glitch">queer</span>, feminist, and trans woman, also the first rapper to have an album called <i>'Savage Love'</i> that was all about <span class="glitch">sex</span>.
+      </p>
+    </div>
+    <div id="sections">
+      <p id="lyricsBtn" class="section" onclick="load_lyrics()">Lyrics</p>
+      <img id="homefigure" class="section" src="imgs/stickman.svg" alt="homepage" width="25px" onclick="load_intro()">
+      <p id="demoBtn" class="section" onclick="load_demo()">Demo</p>
+      <p id="pay_dayBtn" class="section" onclick="load_payday()">Pay Day</p>
+    </div>
+    <div id="lyrics-container">
+      <p>As reply to the Astroworld tragedy.</p>
+      <p>1.1</p>
+      <p>Astroworld, astro weird, <br>
+        Throw the flame on me. (no)<br>
+          Fans really mean the world to me, (ya)<br>
+          Hope you all rest in peace. (peace)<br>
+          My friends demand to know what you do, (sorry)<br>
+          To make a difference.<br>
+          Try to help, to see through all these moronic despair, <br>
+          (Give me something to do, or I'll disappear)<br>
+          It's difficult to know<br>
+          One thing's for sure -<br>
+          Jesus that meant my life,<br>
+          So, why not just do it a while back?(no)
+      </p>
+      <p>All I want is love <br>
+          I don't care what angel <br>
+          Make sure no one uses that word<br>
+          I want love (it's all in)
+      </p>
+      <p>
+          Girls, you are kissing me <br>
+          Fantastic love to all happy girls <br>
+          And when I need or snatch it off (no) <br>
+          No one can ever know <br>
+          I'm a hypnotic green a moon <br>
+          All for the money to buy <br>
+          And don't ever let go, (no) <br>
+          My off poster was your brighter side (no) <br>
+          I want a shot <br>
+          Can I get it <br>
+          The little bastards around here (no) <br>
+          Yunder, yunder, yunder <br>
+          I'm Bfez — <br>
+          I'm Bfez <br>
+          A band of three and a half, <br>
+          I'm Bfezzzzzzz
+      </p>
+      <p> <br> </p>
+      <p>1.2</p>
+      <p>
+        Astroworld, astro weird, <br>
+        Throw the flame on me. (no)<br>
+        Fans really mean the world to me, (ya)<br>
+        Hope you all rest in peace. (peace)<br>
+        It's my trip back to Michigan, (yay yay)<br>
+        Yeah, my friends in the real world. <br>
+        This is 2021. (This is 2021)<br>
+        Color and well-meaning Florida (this is 2021)<br>
+        Jighty-God, this is 2021, this is 2021<br>
+        'Cause it's gonna be a new year (I'm yearning)<br>
+        This is 2022, this is 2022
+      </p>
+      <p>
+        Lamb by myself, I can't wait (country wasteland)<br>
+        Cause I'm trying to be like a neo-Nazi<br>
+        Press the back in this way, I can't wait (I'm trying to be a neo-Nazi)<br>
+        Fire all the fans, (fire)<br>
+        I'm doin' it (fire)<br>
+        That's all I'm doin' (I'm doin' it)<br>
+        Shattered hearts here, just catching them going straight upwards (yeah)<br>
+        Forever, ara-ass<br>
+        Forever, ara-ass<br>
+        Forever, ara-ass
+    </p>
+    <p>
+      Astroworld, astro weird, <br>
+      Throw the flame on me. (no)<br>
+      Fans really mean the world to me, (ya)<br>
+      Hope you all rest in peace. (peace)<br>
+      Herbs are everything, (ya)<br>
+      Tints of my favorite pot, (ah)<br>
+      The best way of learning is just to love. (yes)<br>
+      Sweep into the shower if you feel like one. (no)<br>
+      Give it up, out the shower. (no)<br>
+      Breathe even more than you can breathe, <br>
+      Thanks to all the things you want my trust, (thx)<br>
+      You're my mother, <br>
+      And I'm here to take care of you, (yes)<br>
+    </p>
+    <p>
+      Taste of my hair, (oh)<br>
+      If there's a great bowl in here,<br>
+      Throw it into your hand,<br>
+      No or no not good, <br>
+      A good bag of chips,<br>
+      I said, I said it, (it's lit!)<br>
+      Goodbye, (bye)<br>
+      All my friends are coming home this Wednesday, <br><br>
+      When it's time to go home, (ya)<br>
+      I know it's a long way until I get out, (ya)<br>
+      But I've got a future in my head, <br>
+      Pick one person from the three and you'm going to make tomorrow completely convenient, <br>
+    </p>
+    <p>
+      Ice cold new lemonade, (Ice cold new lemonade)<br>
+      I went with the card because I want to experience the moon, <br>
+      I'd like to pay with my phone, <br>
+      I'd like to stay in this world, (yay)<br>
+      I'm in love with this fan, (skrr)<br>
+      I'm in love with this fan. <br>
+    </p>
+    <p>
+      I wanna know when the clock should be on the locks <br>
+      After every performance, you missed my come down from the sky, <br>
+      In the shower, (shower)<br>
+      I'm back in the water with you, <br>
+      I want to leave you, <br>
+      I wanna shut up, <br>
+      Tell me don't let me feel the power of love, <br>
+      To love me, (ha)<br>
+      When you could take me back into your world, <br>
+      We can't wait to be together again, <br>
+      We can't sleep with you with… <br>
+      I love you...
+    </p>
+    <p> <br> </p>
+    <p>1.3</p>
+    <p>
+      Astroworld, astro weird,  <br>
+      Throw the flame on me. (no) <br>
+      Fans really mean the world to me, (ya) <br>
+      Hope you all rest in peace. (peace)
+    </p>
+    <p>
+      kill your own mother <br>
+      As God will try to put you. <br>
+      I need more man and more flowers <br>
+      Bill Gates <br>
+      Buy my heart a new world <br>
+      I need more man and more flowers (land) <br>
+      Lifetime, you had for sure, You had for sure (of course)
+    </p>
+    <p>
+      New world order ready for me (lol) <br>
+      Clusically you decided <br>
+      Come on new world order <br>
+      New world order arrived, <br>
+      New world order ready to spring
+    </p>
+    <p>
+      New world order free to cross, new world order (order) <br>
+      You diding it, new world order, Fire oil
+    </p>
+    <p>
+      Nectar on the river <br>
+      New world order free to cross, new world order <br>
+      New world order free to cross <br>
+      New world order (pro) <br>
+      Refine, in new world order, <br>
+      New world order never without the clouds <br>
+      New world order free to cross, New world order <br>
+      New world order free to follow <br>
+      New world order
+    </p>
+    <p> <br> </p>
+    <p>1.4</p>
+    <p>
+      Look at me,<br>
+      Watch me, (y)<br>
+      Hey oh, oh no!!
+    </p>
+    <p>
+      You know I’m the realest, <br>
+      that’s why you got me. (ya)<br>
+      And I will never forget, <br>
+      I’m the one you got. (yea)<br>
+      I know it’s not your fault, <br>
+      but I’m the only one. (yea)<br>
+      And I know it’s not your fault, <br>
+      but I’m the only one. (yea)<br>
+      I know it’s not your fault, <br>
+      but I’m the only one. (yea)
+    </p>
+    <p> <br> </p>
+    <p>1.5</p>
+    <p>
+      Astroworld, astro weird,<br>
+      Throw the flame on me. (no)<br>
+      Fans really mean the world to me, (ya)<br>
+      Hope you all rest in peace. (peace)<br>
+      Look at it like it's sunny? (just rainbows)<br>
+      Because I'm a nerd<br>
+      Cause it't like I go to class<br>
+      And generally isn't safe.<br>
+      Ball, ball, ball<br>
+      If it got to go<br>
+      I'm gonna run and I'm gonna make it<br>
+      And that's what we're gonna do<br>
+      Well, I've got a team<br>
+      All the games, I'm really into it<br>
+      But on the moon, I'm really into it
+    </p>
+    <p>
+      You know, I don't know shit,<br>
+      I just know some shit,<br>
+      School's on hold, here & now<br>
+      Cambodia got hold of<br>
+      I'm so into it
+    </p>
+    <p>
+      Rapture don't know where I'm headed<br>
+      I'm kinda going dark<br>
+      But it's always ten by ten<br>
+      I'm scared in that house<br>
+      I don't know where I'm gonna go<br>
+      I've got my girlfriend<br>
+      Upstairs over there<br>
+      I'm scared<br>
+      And it's always gonna be dark
+    </p>
+    <p>
+      So I'm scared to turn on the lights<br>
+      I'm scared<br>
+      I'm scared<br>
+      I'm scared<br>
+      I'm scared<br>
+      I'm scared
+    </p>
+    <p>
+      Hey, baby<br>
+      Yeah, fuck yeah<br>
+      Gotta be safe, baby<br>
+      Alright I'm safe<br>
+      The lights, you're safe<br>
+      You have no issue
+    </p>
+    <p>
+      I have a falling out with that world<br>
+      I have a falling out with that world<br>
+      I have a falling out with that world<br>
+      I have a falling out with that world<br>
+      I woke up and I'm in a kind of world
+    </p>
+    <p>
+      I'm in a kind of world<br>
+      Cause I started a world for the first time<br>
+      At first it was this big thing<br>
+      But then the truth came out<br>
+      I'm in Mississippi<br>
+      I'm my own drug<br>
+      I'm my own weed<br>
+      It's funny that I'm on meth
+    </p>
+    <p>
+      We all live like this<br>
+      I'm shaking, we all live like this<br>
+      We all use drugs<br>
+      We all use drugs<br>
+      We all use drugs<br>
+      We all use drugs<br>
+      We all use drugs<br>
+      We all use drugs<br>
+      We all use drugs<br>
+      I'm the drug lord, I'm the drug lord
+    </p>
+    <p>... ... ... ...</p>
+
+    </div>
+    <div id="demo-container">
+      <p>bRJAk fLEE</p>
+      <p>Inspiration</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dapibus, quis ornare dapibus, sed consectetur est. Ut augue ligula consequat sit amet. Ut elit maximus, odio egestas tincidunt tellus. Vivamus ac elit sit amet, egestas tempor, eget nibh consequat. Cras at augue elit enim euismod, vehicula erat volutpat. Proin felis convallis varius, sed id elit sapien et egestas diam.</p>
+    </div>
+    <div id="video-container">
+      <p>Debut Album - 'Pay Day'</p>
+      <p id="video_sub">7th & Ithaca, September 24th, 2018</p>
+      <video src="error_glitched.mp4" id="error_video" loop>
+      </video>
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
