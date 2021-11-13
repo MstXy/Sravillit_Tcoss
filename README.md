@@ -51,15 +51,19 @@ Because I want to show the original glitch and emphasize on the failed output fr
 #### 3.1 GPT-2
 For the lyrics in the artist page, I used [GPT-2 simple on Google Colab](https://colab.research.google.com/github/sarthakmalik/GPT2.Training.Google.Colaboratory/blob/master/Train_a_GPT_2_Text_Generating_Model_w_GPU.ipynb) to generate these lyrics. The train set is created by pulling the lyrics of Travis Scott's past albums, with title and some unnecessary notation removed, the training txt file is [here](astroworld_lyrics.txt). I tried to include as many lyrics as possible to maximize training performance. 
 Then, for the prompt of generating the lyrics, I get inspiration from the latest Astroworld music festival tragedy, on which Travis Scott is widely blamed. I wrote my own first 4 lines of lyrics and then let GPT-2 generate on its own. The prompted first 4 lines are:
+
 *Astroworld, astro weird,
 Throw the flame on me. (no)
 Fans really mean the world to me, (ya)
 Hope you all rest in peace. (peace)*
+
 The result is not consistent, therefore, I have to generate several times and hand pick the best results with some minor editing. The final result could be seen on the lyrics tab on the project site.
 
 #### 3.2 GPT-J-6B
 For artist description, I use GPT-J-6B, https://6b.eleuther.ai/. It is quite interesting how I had to manipulate the prompt to get what I want. For example, the prompt: *"Ayo! This is Sraviiiiit Tcoss, rapper and producer."* would only give me interview scripts, but *"I am Sraviiiiit Tcoss, a rising rapper and producer. "* would give a decent self-introduction. 
+
 More interesting (and striking), is the unwanted output from GPT-J-6B, which clearing indicates the lack of supervision of their training datasets: *"Ayo! This is Sraviiiiit Tcoss, rapper and producer. I’m so excited to be doing this interview with you because I’ve been a fan of yours for years. You are the first rapper I remember hearing **who was a young, black, queer, feminist, and trans woman who was also writing rap songs.** I think you are also the first rapper to have **an album called “Savage Love” that was all about sex.**..."* This kind of comments, as far as I am concerned, would only appear in those tweets that make sarcastic comments on political correctness, which should not be allowed in a training set.
+
 Still, this was a serendipity, so I also included it in the website, which would show up when the website is 'glitched'.
 
 #### 3.3 GPT-3
@@ -67,14 +71,18 @@ One disappointment is that I finally get the OpenAI API beta and have access to 
 
 ### 4. Website Design
 The visual elements on the website is built using p5.js, including the audio visualizer, and the glitched background and images are created using: [p5.glitch](https://p5.glitch.me/). The fonts of the title and the background would turn into a glitched version when the audio playing has exceeded certain amplitude. Moreover, texts such as *"NOT an A.I. created fake artist"* and *"A young, black, queer, feminist, and trans woman, also the first rapper to have an album called 'Savage Love' that was all about sex."* would appear according to the amplitude.
+
 The sections in the website is quite straight forward. One section for self-introduction, with the stickman figure, one section for lyrics and one section for the audio. And one bonus section called "Payday".
 * Stickman figure: this is drawn from the official website of travis scott: ![ts_page](doc/ts_page.png)
 * in the audio section's beat inspiration, I used [talktotransformers](https://app.inferkit.com/demo) and give the prompt of *"Lorem ipsum dolor sit amet"*, and see how it could continue. The idea behind this is just to make a guess on the situation when A.I. failed to generate relative information on its own generation.
 * Similarily, I notice that in the introduction, GPT-J-6B mentioned Pay Day as the debut album of our artist Sravillit Tcoss, but as I doubt it would even remember such information in further text generation, I also make a guess on A.I.'s response to that, and shows a glitched "video not found" image on clicking the "Pay Day" section.
 
 ### 5. Future Developments
-The original intention is to create something like a music album, with at least few songs in it. But due to the performance of the models and my lack of knowledge in creating music, I switched to only a "Demo". If time is permitted, I would definitely create an album, to make it more like an artist page, not the current "newbie artist" setting. If that's the case, then more editting would require, as simply adding those glitched sound to different songs in the album would be repetitive and not interesting.
-Moreoever, the current approach separates lyrics with the beat because no good method was found to combine the two. But looking at other projects, it seems there are ways to do so.
-As mentioned before, it's a pity that the GPT-3 permission came this late, but including it in the project must be interesting.
+The original intention is to create something like a music album, with at least few songs in it. But due to the performance of the models and my lack of knowledge in creating music, I switched to only a "Demo". If time is permitted, I would definitely create an album, to make it more like an artist page, not the current "newbie artist" setting. If that's the case, then more editting would require, as simply adding those glitched sound to different songs in the album would be repetitive and not interesting. 
+
+Moreoever, the current approach separates lyrics with the beat because no good method was found to combine the two. But looking at other projects, it seems there are ways to do so. 
+
+As mentioned before, it's a pity that the GPT-3 permission came this late, but including it in the project must be interesting. 
+
 Last but not least, I was heavily intrigued by Ye Bot https://talktokanye.com/, it would be sick if each artist page has a self-repelica talking to the viewers.
 
