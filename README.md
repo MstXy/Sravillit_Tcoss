@@ -73,6 +73,8 @@ The sections in the website is quite straight forward. One section for self-intr
 * Similarily, I notice that in the introduction, GPT-J-6B mentioned Pay Day as the debut album of our artist Sravillit Tcoss, but as I doubt it would even remember such information in further text generation, I also make a guess on A.I.'s response to that, and shows a glitched "video not found" image on clicking the "Pay Day" section.
 
 ### 5. Future Developments
-Ye Bot.
-
+The original intention is to create something like a music album, with at least few songs in it. But due to the performance of the models and my lack of knowledge in creating music, I switched to only a "Demo". If time is permitted, I would definitely create an album, to make it more like an artist page, not the current "newbie artist" setting. If that's the case, then more editting would require, as simply adding those glitched sound to different songs in the album would be repetitive and not interesting.
+Moreoever, the current approach separates lyrics with the beat because no good method was found to combine the two. But looking at other projects, it seems there are ways to do so.
+As mentioned before, it's a pity that the GPT-3 permission came this late, but including it in the project must be interesting.
+Last but not least, I was heavily intrigued by Ye Bot https://talktokanye.com/, it would be sick if each artist page has a self-repelica talking to the viewers.
 
