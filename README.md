@@ -16,12 +16,13 @@ Because it is a fake artist and generating audio clips requires training on cert
 #### 2.1 Spleeter
 For sound tools, the first useful tool I found is Spleeter, https://github.com/deezer/spleeter. It also has a convenient Google Colab tool: https://colab.research.google.com/github/deezer/spleeter/blob/master/spleeter.ipynb. It is compiled to a Python library and basically does the job of separating the accompaniment and vocal audio from a song that was input. It needs no training and the result is acceptable (much better compared to other tools mentioned below), of course, it is more of a editing tool than a creation tool. 
 A sample output from Spleeter:
-Accompaniment: [Accompaniment](doc/spleeter/accompaniment.wav)
-Vocal: [Vocal](doc/spleeter/vocals.wav)
-Original Song: [Durag Activity](doc/spleeter/durag_activity.mp3)
-
+* Accompaniment: [Accompaniment](doc/spleeter/accompaniment.wav)
+* Vocal: [Vocal](doc/spleeter/vocals.wav)
+* Original Song: [Durag Activity - Baby Keem, Travis Scott](doc/spleeter/durag_activity.mp3)
+Because the result is ideal (only a small portion of it is a bit distorted), but without anything innovative, I spleeted Travis Scott's new song: [Escape Plan](https://www.youtube.com/watch?v=ve_iZT4Huuo), and use the accompaniment as the base for my later edited track.
 
 #### 2.2 SampleRNN
+SampleRNN is the first tool I tried, refering to this [blog post](https://karlhiner.com/music_generation/wavenet_and_samplernn/) by karlhiner. In the blog post, it is claimed that the result from SampleRNN is actually better than WaveNet, so I decided to try SampleRNN. Because I assume that having vocals in the training data would be impedeing the performance of SampleRNN, I choose [👾Hip Hop/Trap Instrumental Beats Mix 2021 | 1 HOUR #7](https://www.youtube.com/watch?v=1s6-_1IO3gg) on YouTube. Multiple github repositories were tried, and in total I ran about 7 to 8 tests, each for approximately 8 hours, and none of them yield any good result: half were silent and another half contain only vibrations of a single tone. By opening it and looking at the spectrograms, it turns out that the model have achieved nothing: ![samplernn_fail](doc/samplernn/samplernn_result.png). The corresponding file is [here](doc/samplernn/ep41-s2.wav).
 
 #### 2.3 WaveNet
 
