@@ -74,7 +74,7 @@ The visual elements on the website is built using p5.js, including the audio vis
 
 The sections in the website is quite straight forward. One section for self-introduction, with the stickman figure, one section for lyrics and one section for the audio. And one bonus section called "Payday".
 * Stickman figure: this is drawn from the official website of travis scott: ![ts_page](doc/ts_page.png)
-* in the audio section's beat inspiration, I used [talktotransformers](https://app.inferkit.com/demo) and give the prompt of *"Lorem ipsum dolor sit amet"*, and see how it could continue. The idea behind this is just to make a guess on the situation when A.I. failed to generate relative information on its own generation.
+* in the audio section's beat inspiration, I used [talktotransformers](https://app.inferkit.com/demo) and give the prompt of *"Lorem ipsum dolor sit amet"*, and see how it could continue. The idea behind this is just to make a guess on the situation when A.I. failed to generate relative information on its own generation. So the argument here is that, while A.I. is able to generate decent output from our prompt, they may fail to do so repetitively. And the new generation result based on what's generated could go very wild.
 * Similarily, I notice that in the introduction, GPT-J-6B mentioned Pay Day as the debut album of our artist Sravillit Tcoss, but as I doubt it would even remember such information in further text generation, I also make a guess on A.I.'s response to that, and shows a glitched "video not found" image on clicking the "Pay Day" section.
 
 ### 5. Future Developments
