@@ -3,7 +3,7 @@
 
 Created by William Zhang [cz1627@nyu.edu](cz1627@nyu.edu)
 
-### Project Link: https://mstxy.github.io/Sravillis_Tcoss/
+### Project Link: https://mstxy.github.io/Sravillit_Tcoss/
 
 ### Abstract
 This project uses several A.I. sound tools (SampleRNN, Jukebox, AIVA, Spleeter, WaveNet) and text tools (GPT-2, GPT-J-6B) to create a fake artist: Sravillit Tcoss that DOES NOT work as smoothly as one would have expected. Intentional glitches in audio, visual and textual elements are added to emphasis such A.I. failure. Through this project, I hope to experiment with various tools and more importantly, address on the limitation of A.I., and warn towards a blind trust and usage of A.I..
