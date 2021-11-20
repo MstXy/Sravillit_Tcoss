@@ -18,7 +18,7 @@ This project uses several A.I. sound tools (SampleRNN, Jukebox, AIVA, Spleeter, 
   
 * [2.2.2 PRiSM-SampleRNN](#222-prism-samplernn)
   
-* [2.3 WaveNet & WaveGAN](#23-wavenet-wavegan)
+* [2.3 WaveNet & WaveGAN](#23-wavenet--wavegan)
   
 * [2.4 OpenAI Jukebox](#24-openai-jukebox)
   
