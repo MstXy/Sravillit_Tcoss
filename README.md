@@ -11,7 +11,33 @@ This project uses several A.I. sound tools (SampleRNN, Jukebox, AIVA, Spleeter, 
 [1. Inspriation](#1-inspiration)
 
 [2. Sound Production](#2-sound-production)
-  [2.1 Spleeter](#### 2.1 Spleeter)
+
+* [2.1 Spleeter](#21-spleeter)
+  
+* [2.2.1 SampleRNN-pytorch](#221-samplernn-pytorch)
+  
+* [2.2.2 PRiSM-SampleRNN](#222-prism-samplernn)
+  
+* [2.3 WaveNet & WaveGAN](#23-wavenet-wavegan)
+  
+* [2.4 OpenAI Jukebox](#24-openai-jukebox)
+  
+* [2.5 AIVA](#25-aiva)
+  
+* [2.6 Adobe Audition](#26-adobe-audition)
+
+[3. Text Production](#3-text-production)
+
+* [3.1 GPT-2](#31-gpt-2)
+
+* [3.2 GPT-J-6B](#32-gpt-j-6b)
+
+* [3.3 GPT-3](#33-gpt-3)
+
+[4. Website Design](#4-website-design)
+
+[5. Future Developments](#5-future-developments)
+
 
 
 
@@ -49,10 +75,10 @@ Audio generations of different stages are used, and mostly are from early stages
 * The jukebox [v2_genre_ids.txt](https://github.com/openai/jukebox/blob/master/jukebox/data/ids/v2_genre_ids.txt) seems corrupted, as 'lo-fi' are being in two categories 'lo' and 'fi', and 'hip-hop' into 'hip' and 'hop'. Not sure it's a bug or it's just the mechanism.
 Overall, Jukebox yields the best result from a sample audio, though still limited to the length of audio generation.
 
-#### 2.6 AIVA
+#### 2.5 AIVA
 AIVA is a online A.I. music generator, which allows me to prompt in music genres and some specifications to generate music. I prompt in Hip Hop and Trap and the generated music look like this: ![Aiva](doc/aiva.png), which has separated track for different instruments/components. Still, this tool could only generate basic components for a music track, and is less of a creative tool. So I take advatange of the components and mainly use the base and percussion in the final edited audio. 
 
-#### 2.7 Adobe Audition
+#### 2.6 Adobe Audition
 Because I want to show the original glitch and emphasize on the failed output from A.I. outputs, I did not add much effect to the clips, but mainly tweak the volume, the arrangement and the speed of the clips. And this is a screenshot of the Adobe Audition editing: ![Audition](doc/audition.png). The final audio could be find [here](Demo.mp3) or on the project site.
 
 ### 3. Text Production
